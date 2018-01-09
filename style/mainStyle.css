@@ -1,0 +1,21 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+#splashPage {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/SplashPageImage.png");
+    height: 100%;
+}
+
+#main {
+    position: relative;
+    background-color: #f9f9f9;
+    width: 100%;
+    top: -10%;
+    text-align: center;
+}
