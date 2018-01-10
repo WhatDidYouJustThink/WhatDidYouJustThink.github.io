@@ -7,7 +7,7 @@
         <link rel="icon" href="images/favicon.ico">
     </head>
 
-    <body>
+    <body onload="getLatest()">
 
         <div id="main">
 
@@ -18,10 +18,10 @@
             </div>
 
             <div class="content" id="episodes">
-                <h3 id="latest">Latest Episode: </h3>
-                <audio src="https://s3.castbox.fm/f4/46/84/3ccb7c4768ad803475dba3230e.mp3" controls>
+                <h3 id="latestTitle">First Episode: Fucking Freud</h3>
+                <audio id="latestAudio" src="https://s3.castbox.fm/e7/70/24/1216064a05830c33b607708cda.mp3" controls>
                     <!-- This <embed> content is the alternate, only shown if the browser does not support <audio> -->
-                    <embed type="audio/mpeg" src="https://s3.castbox.fm/f4/46/84/3ccb7c4768ad803475dba3230e.mp3" autostart="0" loop="false" width="300" height="40"
+                    <embed id="latestEmbed" type="audio/mpeg" src="https://s3.castbox.fm/e7/70/24/1216064a05830c33b607708cda.mp3" autostart="0" loop="false" width="300" height="40"
                            controller="true" bgcolor="#FFFFFF"/>
                 </audio>
 
