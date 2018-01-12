@@ -1,31 +1,33 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
+
 body, html {
     height: 100%;
     width: 100%;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
     margin: 0;
     z-index: 0;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("../images/SplashPageImage.png");
+    background-image: url("../images/SplashPageImage.jpg");
 }
 
 #main {
     position: relative;
-    top: 90%;
+    top: 80%;
+    border-radius: 20px;
 }
 
 .content {
-    background-color: #ffffff;
+    background-color: #f2f6f6;
+    color: #686868;
     margin: auto;
-    border-radius: 45px;
-    width: 80%;
+    width: 100%;
     text-align: center;
     padding-top: 0.5%;
     padding-bottom: 1%;
     z-index: 1;
-    margin-bottom: 3%;
 }
 
 .divider {
