@@ -12,6 +12,13 @@ body, html {
     background-size: cover;
     background-image: url("../images/SplashPageImage.jpg");
 }
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 35px;
+}
 
 p {
     font-size: 25px
@@ -20,12 +27,11 @@ p {
 #main {
     position: relative;
     top: 80%;
-    border-radius: 20px;
+    background-color: #f2f6f6;
+    color: #686868;
 }
 
 .content {
-    background-color: #f2f6f6;
-    color: #686868;
     margin: auto;
     width: 100%;
     text-align: center;
@@ -38,7 +44,7 @@ p {
     margin: auto;
     width: 75%;
     height: 1px;
-    background-color: darkred;
+    background-color: black;
 }
 
 .dividerImage {
@@ -48,8 +54,8 @@ p {
 }
 
 #sources {
-    margin-top: 1%;
-    margin-bottom: 1%;
+    margin-top: 8%;
+    margin-bottom: 8%;
 }
 
 .sourceLink {
