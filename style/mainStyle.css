@@ -13,6 +13,10 @@ body, html {
     background-image: url("../images/SplashPageImage.jpg");
 }
 
+p {
+    font-size: 25px
+}
+
 #main {
     position: relative;
     top: 80%;
@@ -37,34 +41,36 @@ body, html {
     background-color: darkred;
 }
 
+.dividerImage {
+    height: 300px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
 #sources {
-    height: 50px;
     margin-top: 1%;
     margin-bottom: 1%;
 }
 
 .sourceLink {
     text-decoration: none;
-    height: 100%;
     margin: 1%;
 }
 
 .sourceIcon {
-    height: 100%;
+    height: 50px;
 }
 
 #socials {
-    height: 50px;
     margin-top: 1%;
     margin-bottom: 1%;
 }
 
 .socialLink {
     text-decoration: none;
-    height: 100%;
     margin: 1%;
 }
 
 .socialIcon {
-    height: 100%;
+    height: 50px;
 }
