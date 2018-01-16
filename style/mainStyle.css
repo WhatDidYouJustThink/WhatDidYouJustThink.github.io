@@ -24,20 +24,29 @@ p {
     font-size: 25px
 }
 
+#bar {
+    position: relative;
+    top: 80%;
+    height: 4px;
+    background-color: #d2d6d6;
+}
+
 #main {
     position: relative;
     top: 80%;
     background-color: #f2f6f6;
     color: #686868;
+    text-align: center;
+    min-height: 100%;
+    padding-right: 5%;
+    padding-left: 5%;
 }
 
 .content {
     margin: auto;
     width: 100%;
-    text-align: center;
     padding-top: 0.5%;
     padding-bottom: 1%;
-    z-index: 1;
 }
 
 .divider {
@@ -54,8 +63,8 @@ p {
 }
 
 #sources {
-    margin-top: 8%;
-    margin-bottom: 8%;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .sourceLink {

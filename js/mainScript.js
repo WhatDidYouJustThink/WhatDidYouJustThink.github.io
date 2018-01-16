@@ -2,14 +2,14 @@ function getLatest() {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            var item = this.responseXML.firstChild.childNodes[1].childNodes[13];
-            var desc = item.childNodes[3].textContent;
-            var title = item.childNodes[1].textContent;
-            var mp3Link = item.childNodes[7].outerHTML.split("\"")[1];
-            document.getElementById("latestTitle").innerHTML = "Latest Episode: " + title.replace(/</g, '&lt').replace(/>/g, '&gt').replace(/\"/g, '&quot');
-            document.getElementById("latestDesc").innerHTML = desc.replace('<', '&lt').replace('>', '&gt');
-            document.getElementById("latestAudio").src = mp3Link;
-            document.getElementById("latestEmbed").src = mp3Link;
+            var item = this.responseXML.querySelector("item");
+            var title = item.querySelector("title").textContent;
+            var desc = item.querySelector("description").textContent;
+            var mp3Link = item.querySelector("enclosure").getAttribute("url");
+            document.getElementById("latestTitle").textContent = "Latest Episode: " + title.replace(/</g, '&lt').replace(/>/g, '&gt').replace(/\"/g, '&quot');
+            document.getElementById("latestDesc").textContent = desc.replace(/</g, '&lt').replace(/>/g, '&gt').replace(/\"/g, '&quot');
+            document.getElementById("latestAudio").setAttribute("src", mp3Link);
+            document.getElementById("latestEmbed").setAttribute("src", mp3Link);
         }
     };
     xhttp.open("GET", "https://castbox.fm/app/castbox/rss/1093852", true);
