@@ -76,6 +76,7 @@ p {
 .dropdownMenu {
     display: none;
     position: absolute;
+    background-color: #f2f6f6;
     min-width: 300px;
     box-shadow: 0px 8px 24px 0px gray;
     z-index: 1;
