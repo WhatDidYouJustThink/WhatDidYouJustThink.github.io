@@ -1,1 +1,1 @@
-# WhatDidYouJustThink.github.io
+Source for GitHub Pages user website, hosted at [WhatDidYouJustThink.github.io](https://WhatDidYouJustThink.github.io/)

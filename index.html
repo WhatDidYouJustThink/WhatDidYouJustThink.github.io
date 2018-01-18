@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+
+    <head>
+        <title>Home - I'm Sorry, What Did You Just Think?</title>
+        <link rel="stylesheet" type="text/css" href="style/mainStyle.css">
+        <link rel="icon" href="images/favicon.ico">
+    </head>
+
+    <body onload="getLatest()">
+
+        <div id="main">
+
+            <div id="header">
+                <a href="#home" class="headerLink">Home &#8595;</a>
+                <div id="dropdownContainer">
+                    <a href="javascript:operateListenDropdown()" class="headerLink" id="dropdownToggle">Listen Now</a>
+                    <div class="dropdownMenu" id="dropdownMenu">
+                        <a href="TODO iTunes link" class="dropdownLink">iTunes</a>
+                        <a href="TODO Google Play link" class="dropdownLink">Google Play</a>
+                        <a href="https://castbox.fm/channel/I%27m-Sorry-What-Did-You-Just-Think%3F-A-Podcast!-id1093852?country=us" class="dropdownLink">Castbox</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content" id="information">
+                <h1 id="title">I'm Sorry, What Did You Just Think?</h1>
+                <div class="divider"></div>
+                <p id="desc">A podcast where I talk weird theories at you and drink wine and/or coffee!</p>
+            </div>
+
+            <div class="content">
+                <img src="images/kaitlyn_Book.jpg" class="dividerImage">
+            </div>
+
+            <div class="content" id="episodes">
+                <h2 id="latestTitle">First Episode: Fucking Freud</h2>
+                <audio id="latestAudio" src="https://s3.castbox.fm/e7/70/24/1216064a05830c33b607708cda.mp3" controls>
+                    <!-- This <embed> content is the alternate, only shown if the browser does not support <audio> -->
+                    <embed id="latestEmbed" type="audio/mpeg" src="https://s3.castbox.fm/e7/70/24/1216064a05830c33b607708cda.mp3" autostart="0" loop="false" width="300" height="40"
+                           controller="true" bgcolor="#FFFFFF" />
+                </audio>
+                <p id="latestDesc">Yes, pun intended.</p>
+
+                <div id="sources">
+                    <a href="TODO: iTunes link" target="_blank" class="sourceLink">
+                        <img src="images/badge_iTunes.svg" class="sourceIcon" alt="iTunes">
+                    </a>
+                    <a href="TODO: Google Play link" target="_blank" class="sourceLink">
+                        <img src="images/badge_GooglePlay.png" class="sourceIcon" alt="Google Play">
+                    </a>
+                    <a href="https://castbox.fm/channel/I%27m-Sorry-What-Did-You-Just-Think%3F-A-Podcast!-id1093852?country=us" target="_blank" class="sourceLink">
+                        <img src="images/badge_Castbox.png" class="sourceIcon" alt="Castbox">
+                    </a>
+                </div>
+            </div>
+
+            <div class="content" id="contact">
+                <div id="socials">
+                    <a href="https://twitter.com/ISWDYJTPodcast" target="_blank" class="socialLink">
+                        <img src="images/icon_Twitter.png" class="socialIcon" alt="Twitter">
+                    </a>
+                    <a href="https://www.instagram.com/whatdidyoujustthink/" target="_blank" class="socialLink">
+                        <img src="images/icon_Instagram.png" class="socialIcon" alt="Instagram">
+                    </a>
+                    <a href="mailto:whatdidyoujustthink@gmail.com" class="socialLink">
+                        <img src="images/icon_Email.png" class="socialIcon" alt="e-mail">
+                    </a>
+                    <a href="https://castbox.fm/app/castbox/rss/1093852" target="_blank" class="socialLink">
+                        <img src="images/icon_RSS.png" class="socialIcon" alt="RSS Feed">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/mainScript.js"></script>
+        <script>
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(e) {
+                if (!e.target.matches('#dropdownToggle')) {
+                    var myDropdown = document.getElementById("dropdownMenu");
+                    if (myDropdown.classList.contains('show')) {
+                        myDropdown.classList.remove('show');
+                    }
+                }
+            }
+        </script>
+
+    </body>
+</html>
+<!-- John Brockway, 2018 -->

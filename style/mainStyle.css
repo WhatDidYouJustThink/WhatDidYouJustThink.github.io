@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
+
+body, html {
+    height: 100%;
+    width: 100%;
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    margin: 0;
+    z-index: 0;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/SplashPageImage.jpg");
+    z-index: 0;
+}
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+p {
+    font-size: 25px;
+}
+
+#main {
+    position: relative;
+    top: 70%;
+    background-color: #f2f6f6;
+    color: #686868;
+    text-align: center;
+    box-shadow: 0px -20px 1000px 0px black;
+    min-height: 100%;
+    padding-right: 5%;
+    padding-left: 5%;
+    transition: 1s;
+}
+
+.content {
+    margin: auto;
+    width: 100%;
+    padding-bottom: 2%;
+}
+
+#header {
+    overflow: hidden;
+}
+
+.headerLink {
+    float: left;
+    font-size: 22px;
+    color: #686868;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+#dropdownContainer {
+    float: left;
+    overflow: hidden;
+}
+
+#dropdownToggle {
+    float: none;
+    padding: 14px 16px;
+    display: inline-block;
+}
+
+.headerLink:hover, .headerLink:focus {
+    background-color: #d2d6d6;
+}
+
+.dropdownMenu {
+    display: none;
+    position: absolute;
+    background-color: #f2f6f6;
+    min-width: 300px;
+    box-shadow: 0px 8px 24px 0px gray;
+    z-index: 1;
+}
+
+.dropdownLink {
+    float: none;
+    color: #686868;
+    font-size: 18px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    transition: 0.4s;
+}
+
+.dropdownLink:hover {
+    background-color: #d2d6d6;
+}
+
+.show {
+    display: block;
+}
+
+#title {
+    padding-top: 1%;
+}
+
+.divider {
+    margin: auto;
+    width: 75%;
+    height: 1px;
+    background-color: black;
+}
+
+.dividerImage {
+    height: 300px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#sources {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.sourceLink {
+    text-decoration: none;
+    margin: 1%;
+}
+
+.sourceIcon {
+    height: 50px;
+}
+
+#socials {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.socialLink {
+    text-decoration: none;
+    margin: 1%;
+}
+
+.socialIcon {
+    height: 50px;
+}
