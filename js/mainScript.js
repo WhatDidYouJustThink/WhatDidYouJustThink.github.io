@@ -15,3 +15,7 @@ function getLatest() {
     xhttp.open("GET", "https://castbox.fm/app/castbox/rss/1093852", true);
     xhttp.send();
 }
+
+function operateListenDropdown() {
+    document.getElementById("dropdownMenu").classList.toggle("show");
+}

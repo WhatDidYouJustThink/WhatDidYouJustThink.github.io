@@ -11,6 +11,18 @@
 
         <div id="main">
 
+            <div id="header">
+                <a href="#home" class="headerLink">Home &#8595;</a>
+                <div id="dropdownContainer">
+                    <a href="javascript:operateListenDropdown()" class="headerLink" id="dropdownToggle">Listen Now</a>
+                    <div class="dropdownMenu" id="dropdownMenu">
+                        <a href="TODO iTunes link" class="dropdownLink">iTunes</a>
+                        <a href="TODO Google Play link" class="dropdownLink">Google Play</a>
+                        <a href="https://castbox.fm/channel/I%27m-Sorry-What-Did-You-Just-Think%3F-A-Podcast!-id1093852?country=us" class="dropdownLink">Castbox</a>
+                    </div>
+                </div>
+            </div>
+
             <div class="content" id="information">
                 <h1 id="title">I'm Sorry, What Did You Just Think?</h1>
                 <div class="divider"></div>
@@ -62,8 +74,18 @@
         </div>
 
         <script src="js/mainScript.js"></script>
+        <script>
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(e) {
+                if (!e.target.matches('#dropdownToggle')) {
+                    var myDropdown = document.getElementById("dropdownMenu");
+                    if (myDropdown.classList.contains('show')) {
+                        myDropdown.classList.remove('show');
+                    }
+                }
+            }
+        </script>
 
     </body>
-
 </html>
 <!-- John Brockway, 2018 -->
